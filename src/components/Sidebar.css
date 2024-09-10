@@ -8,7 +8,7 @@
     align-items: center;
     padding: 0px 0;
     position: fixed; /* Fix the sidebar position */
-    z-index: 1000;
+    z-index: 1001;
   }
   
   .sidebar-logo {
