@@ -5,7 +5,7 @@ import "./CustomNode.css";
 const CustomNode = ({ data }) => {
   return (
     <div className="custom-node">
-      <Handle type="source" position="right" id="method" style={{ top: 70 }} />
+      <Handle type="source" position="right" id="method" style={{ top: 100 }} />
       <div className="node-header">
         <h4>{data.title}</h4>
       </div>
@@ -16,7 +16,7 @@ const CustomNode = ({ data }) => {
         <p><strong>Params:</strong> {JSON.stringify(data.params)}</p>
         <p><strong>ResponseObject:</strong> {data.responseObject}</p>
       </div>
-      <Handle type="target" position="left" id="method" style={{ top: 10 }} />
+      <Handle type="target" position="left" id="method" style={{ top: 100 }} />
     </div>
   );
 };
