@@ -10,10 +10,9 @@ const CustomNode = ({ data }) => {
         <h4>{data.title}</h4>
       </div>
       <div className="node-body">
-        
         <p className="method-name">{data.method}</p>
-        <p><strong>DependentLibs:</strong> {data.libs.join(', ')}</p>
-        <p><strong>Params:</strong> {JSON.stringify(data.params)}</p>
+        <p><strong>DependentLibs:</strong> [{data.libs.join(', ')}]</p>
+        <p><strong>Params:</strong> [{data.params.join(', ')}]</p>
         <p><strong>ResponseObject:</strong> {data.responseObject}</p>
       </div>
       <Handle type="target" position="left" id="method" style={{ top: 100 }} />
